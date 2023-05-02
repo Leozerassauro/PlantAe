@@ -1,21 +1,22 @@
 /* eslint-disable camelcase */
-import { View, Text, StatusBar } from 'react-native'
+import { StatusBar } from 'react-native'
+import { NativeBaseProvider } from 'native-base'
 import { useFonts, Imprima_400Regular } from '@expo-google-fonts/imprima'
+import { Loading } from '@components/Loading'
+import { THEME } from './src/theme'
+
+import { Routes } from '@routes/index'
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Imprima_400Regular })
   return (
-    <View>
+    <NativeBaseProvider theme={THEME}>
       <StatusBar
-        barStyle="light-content"
+        barStyle="dark-content"
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? (
-        <Text>Open up App.tsx to start working on your app!</Text>
-      ) : (
-        <View />
-      )}
-    </View>
+      {fontsLoaded ? <Routes /> : <Loading />}
+    </NativeBaseProvider>
   )
 }
