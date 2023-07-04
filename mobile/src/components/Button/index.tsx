@@ -1,13 +1,29 @@
+// Native
 import { TouchableOpacityProps } from 'react-native'
-
-import { ButtonVariantStyleProps, Container } from './styled'
+// Components
+import { Loading } from '../Loading'
+// Styles
+import { ButtonVariantStyleProps, Container, Title } from './styles'
 
 type Props = TouchableOpacityProps & {
   title: string
-  variant: ButtonVariantStyleProps
+  variant?: ButtonVariantStyleProps
   isLoading?: boolean
 }
 
-export function Button({ variant, ...rest }: Props) {
-  return <Container variant={variant} {...rest}></Container>
+export function Button({
+  title,
+  variant = 'solid',
+  isLoading = false,
+  ...rest
+}: Props) {
+  return (
+    <Container variant={variant} {...rest}>
+      {isLoading ? (
+        <Loading size="small" />
+      ) : (
+        <Title variant={variant}>{title}</Title>
+      )}
+    </Container>
+  )
 }

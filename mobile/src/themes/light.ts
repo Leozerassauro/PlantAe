@@ -2,10 +2,16 @@ import { DefaultTheme } from 'styled-components/native'
 
 export const lightTheme: DefaultTheme = {
   colors: {
-    backgroundColor: '#FFFCEC',
+    green_700: '#283618',
+    green_500: '#606C38',
+
+    yellow_50: '#FEFAE0',
+
+    orange_700: '#BC6C25',
+    orange_500: '#DDA15E',
   },
   font_family: {
-    regular: 'Roboto_400Regular',
+    regular: 'Imprima_400Regular',
   },
   font_size: {
     sm: '14px',

@@ -2,7 +2,13 @@ import 'styled-components'
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      backgroundColor: string
+      green_700: string
+      green_500: string
+
+      yellow_50: string
+
+      orange_700: string
+      orange_500: string
     }
     font_family: {
       regular: string
