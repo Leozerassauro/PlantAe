@@ -1,17 +1,19 @@
 // Native
 import styled from 'styled-components/native'
 
-export const Container = styled.View`
-  flex: 1;
-
+export const Container = styled.ScrollView`
   gap: 30px;
 
-  justify-content: center;
+  background-color: ${(props) => props.theme.colors.yellow_50};
+`
+
+export const Content = styled.View`
+  flex: 1;
+
   align-items: center;
+  gap: 30px;
 
   padding: 60px;
-
-  background-color: ${(props) => props.theme.colors.yellow_50};
 `
 
 export const LogoContainer = styled.View`

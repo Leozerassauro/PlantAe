@@ -29,7 +29,11 @@ export function NewPlant() {
   }
 
   return (
-    <Container>
+    <Container
+      contentContainerStyle={{ flexGrow: 1, paddingBottom: 160 }}
+      showsVerticalScrollIndicator={false}
+      keyboardShouldPersistTaps="handled"
+    >
       <Header
         title="Adicionar nova planta"
         iconPosition="left"
@@ -41,13 +45,13 @@ export function NewPlant() {
           <AddPhotoSvg />
           <Title>Adicione uma foto</Title>
         </AddPhotoContent>
-        <Input borderColor={colors.green_500} placeholder="Nome da planta" />
+        <Input borderColor={colors.green_500} placeholder="NOME DA PLANTA" />
         <SliderContent>
           <Slider
             title="QUANTIDADE DE SOL"
             measurement="h/dia"
             minimumValue={0}
-            maximumValue={24}
+            maximumValue={12}
             minimumTrackTintColor={colors.yellow_500}
             thumbTintColor={colors.yellow_500}
           />
@@ -63,7 +67,7 @@ export function NewPlant() {
             title="ÁGUA"
             measurement="x/semana"
             minimumValue={0}
-            maximumValue={10}
+            maximumValue={7}
             minimumTrackTintColor={colors.blue_500}
             thumbTintColor={colors.blue_500}
           />

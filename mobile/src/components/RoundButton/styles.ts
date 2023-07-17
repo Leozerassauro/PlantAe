@@ -15,9 +15,10 @@ export const Container = styled(TouchableOpacity)<ContainerProps>`
 
   border-radius: 50px;
 
-  padding: 15px;
+  width: 65px;
 
-  z-index: 1;
+  padding: 15px;
+  margin-top: 30px;
 
   elevation: 3;
 `

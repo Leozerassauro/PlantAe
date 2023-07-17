@@ -7,6 +7,7 @@ import { RoundButton } from '@components/RoundButton'
 import {
   CadastroVerdeSvgContainer,
   Container,
+  Content,
   Title,
   TitleContainer,
 } from './styles'
@@ -19,8 +20,12 @@ export function SignUp() {
   const emailRef = useRef<any>(null)
   const passwordRef = useRef<any>(null)
   return (
-    <>
-      <Container>
+    <Container
+      contentContainerStyle={{ flexGrow: 1, paddingBottom: 80 }}
+      showsVerticalScrollIndicator={false}
+      keyboardShouldPersistTaps="handled"
+    >
+      <Content>
         <TitleContainer>
           <Title>Cadastro</Title>
         </TitleContainer>
@@ -61,11 +66,12 @@ export function SignUp() {
           inputRef={passwordRef}
           borderColor="#606C38"
         />
+
         <RoundButton variant="lightGreen" />
-        <CadastroVerdeSvgContainer>
-          <CadastroVerdeSvg />
-        </CadastroVerdeSvgContainer>
-      </Container>
-    </>
+      </Content>
+      <CadastroVerdeSvgContainer>
+        <CadastroVerdeSvg />
+      </CadastroVerdeSvgContainer>
+    </Container>
   )
 }

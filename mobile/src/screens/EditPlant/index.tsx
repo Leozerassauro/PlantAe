@@ -29,7 +29,11 @@ export function EditPlant() {
   }
 
   return (
-    <Container>
+    <Container
+      contentContainerStyle={{ flexGrow: 1, paddingBottom: 160 }}
+      showsVerticalScrollIndicator={false}
+      keyboardShouldPersistTaps="handled"
+    >
       <Header
         title="Editar"
         iconPosition="left"

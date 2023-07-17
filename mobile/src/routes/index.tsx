@@ -1,5 +1,5 @@
 // Native
-import { View } from 'react-native'
+import { KeyboardAvoidingView, Platform, View } from 'react-native'
 import { useTheme } from 'styled-components/native'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 // Components
@@ -23,7 +23,7 @@ export function Routes() {
 
   return (
     <View style={{ flex: 1 }}>
-      <NavigationContainer theme={theme}>{<AppRoutes />}</NavigationContainer>
+      <NavigationContainer theme={theme}>{<AuthRoutes />}</NavigationContainer>
     </View>
   )
 }
