@@ -14,7 +14,7 @@ export default function App() {
   })
   return (
     <ThemeProvider>
-      <StatusBar style="auto" />
+      <StatusBar style="light" translucent />
       {fontLoaded ? <Routes /> : <Loading size="large" color="#606C38" />}
     </ThemeProvider>
   )

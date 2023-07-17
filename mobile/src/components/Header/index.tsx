@@ -1,16 +1,17 @@
+import { TouchableOpacityProps } from 'react-native'
 import { Container, Icon, IconButton, Title } from './styles'
 
-type Props = {
+type Props = TouchableOpacityProps & {
   title: string
   iconPosition: 'left' | 'right'
   iconName: string
 }
 
-export function Header({ title, iconPosition, iconName }: Props) {
+export function Header({ title, iconPosition, iconName, ...rest }: Props) {
   return (
     <Container>
       <Title>{title}</Title>
-      <IconButton iconPosition={iconPosition}>
+      <IconButton iconPosition={iconPosition} {...rest}>
         <Icon name={iconName} />
       </IconButton>
     </Container>

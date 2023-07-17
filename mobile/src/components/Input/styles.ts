@@ -19,4 +19,5 @@ export const Container = styled.TextInput<ContainerProps>`
   border-radius: 50px;
 
   color: ${(props) => props.theme.colors.green_700};
+  font_family: ${(props) => props.theme.font_family.regular};
 `

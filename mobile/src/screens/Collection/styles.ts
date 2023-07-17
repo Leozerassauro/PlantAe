@@ -6,9 +6,10 @@ export const Container = styled.View`
   background-color: ${(props) => props.theme.colors.yellow_50};
 `
 
-export const BackgroundContainer = styled.ImageBackground`
-  position: absolute;
+export const Content = styled.View`
+  flex: 1;
 
-  width: 100%;
-  height: 100%;
+  gap: 35px;
+
+  padding: 60px;
 `

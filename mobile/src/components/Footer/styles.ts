@@ -8,10 +8,13 @@ export const Container = styled.View<ContainerProps>`
   position: absolute;
   bottom: 0;
 
-  height: 115px;
-  width: 100%;
+  align-items: center;
 
-  background-color: ${(props) =>
-    props.hasBackground ? props.theme.colors.green_700 : 'transparent'};
+  width: 100%;
 `
-export const RoundButton = styled.TouchableOpacity``
+export const SvgContainer = styled.View`
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+`
