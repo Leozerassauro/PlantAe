@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components/native'
+// Native
+import styled from 'styled-components/native'
 
 type ContainerProps = {
   isFocused: boolean

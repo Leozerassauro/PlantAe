@@ -1,10 +1,12 @@
+// Native
 import { TouchableOpacityProps } from 'react-native'
+// Styles
 import {
   Container,
   EditButtonContainer,
   TrashSvgButtonContainer,
 } from './styles'
-
+// Assets
 import EditButtonSvg from '@assets/editButton.svg'
 import TrashSvg from '@assets/trash.svg'
 

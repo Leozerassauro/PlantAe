@@ -1,3 +1,7 @@
+// Native
+import { useState } from 'react'
+import { SliderProps } from '@react-native-community/slider'
+// Styles
 import {
   Container,
   SliderBar,
@@ -5,8 +9,6 @@ import {
   SliderValue,
   Title,
 } from './styles'
-import { SliderProps } from '@react-native-community/slider'
-import { useState } from 'react'
 
 type Props = SliderProps & {
   title: string

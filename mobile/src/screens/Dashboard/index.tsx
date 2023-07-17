@@ -1,12 +1,15 @@
+// Native
+import { useNavigation } from '@react-navigation/native'
+// Components
 import { Header } from '@components/Header'
-import { BackgroundContainer, Container } from './styles'
-
-import BackgroundLeaves from '@assets/backgroundLeaves.png'
 import { Footer } from '@components/Footer'
 import { PlantCard } from '@components/PlantCard'
-import { useNavigation } from '@react-navigation/native'
-
+// Routes
 import { AppNavigatorRoutesProps } from '@routes/app.routes'
+// Styles
+import { BackgroundContainer, Container } from './styles'
+// Assets
+import BackgroundLeaves from '@assets/backgroundLeaves.png'
 
 export function Dashboard() {
   const navigation = useNavigation<AppNavigatorRoutesProps>()

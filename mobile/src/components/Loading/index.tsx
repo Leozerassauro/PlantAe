@@ -1,4 +1,3 @@
-// Native
 // Styles
 import { Container, Spinner } from './styles'
 

@@ -1,4 +1,6 @@
+// Native
 import styled, { css } from 'styled-components/native'
+// Icons
 import FontAwesome from '@expo/vector-icons/FontAwesome'
 
 type IconButtonType = {

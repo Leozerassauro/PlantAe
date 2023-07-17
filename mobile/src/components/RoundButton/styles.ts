@@ -1,6 +1,9 @@
+// Native
 import styled from 'styled-components/native'
-import Entypo from '@expo/vector-icons/Entypo'
+// Native Components
 import { TouchableOpacity } from 'react-native'
+// Icons
+import Entypo from '@expo/vector-icons/Entypo'
 
 type ContainerProps = {
   variant: 'lightGreen' | 'darkGreen'

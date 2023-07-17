@@ -1,8 +1,11 @@
+// Native
 import { Container, SvgContainer } from './styles'
 import { useTheme } from 'styled-components/native'
-import FooterSvg from '@assets/footer.svg'
+// Components
 import { AddButton } from '@components/AddButton'
 import { EditButton } from '@components/EditButton'
+// Assets
+import FooterSvg from '@assets/footer.svg'
 
 type Props = {
   variant: 'add' | 'edit'

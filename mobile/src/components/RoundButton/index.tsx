@@ -1,3 +1,4 @@
+// Styles
 import { Container, Icon } from './styles'
 
 type Props = {

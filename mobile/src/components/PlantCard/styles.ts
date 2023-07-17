@@ -1,6 +1,7 @@
-import { LinearGradient } from 'expo-linear-gradient'
-
+// Native
 import styled from 'styled-components/native'
+// Native Components
+import { LinearGradient } from 'expo-linear-gradient'
 
 export const Container = styled.FlatList`
   flex: 1;

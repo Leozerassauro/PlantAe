@@ -1,5 +1,7 @@
-import Slider from '@react-native-community/slider'
+// Native
 import styled from 'styled-components/native'
+// Native Components
+import Slider from '@react-native-community/slider'
 
 export const Container = styled.View``
 

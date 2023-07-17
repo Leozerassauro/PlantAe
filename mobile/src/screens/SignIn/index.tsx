@@ -1,9 +1,12 @@
-import { Container, LogoContainer, Title, TitleContainer } from './styles'
-
-import LogoSvg from '@assets/logoLightTheme.svg'
-import { Input } from '@components/Input'
+// Native
 import { useRef } from 'react'
+// Components
+import { Input } from '@components/Input'
 import { RoundButton } from '@components/RoundButton'
+// Styles
+import { Container, LogoContainer, Title, TitleContainer } from './styles'
+// Assets
+import LogoSvg from '@assets/logoLightTheme.svg'
 
 export function SignIn() {
   const passwordRef = useRef<any>(null)

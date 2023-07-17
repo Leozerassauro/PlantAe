@@ -1,10 +1,10 @@
-import { Footer } from '@components/Footer'
-import { Header } from '@components/Header'
-import { Input } from '@components/Input'
-import { Slider } from '@components/Slider'
+// Native
 import { useNavigation } from '@react-navigation/native'
+// Components
+import { Header } from '@components/Header'
+// Routes
 import { AppNavigatorRoutesProps } from '@routes/app.routes'
-import { useTheme } from 'styled-components/native'
+// Styles
 import { Container, Content } from './styles'
 
 export function Collection() {

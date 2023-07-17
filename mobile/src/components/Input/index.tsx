@@ -1,8 +1,9 @@
-import { Container } from './styles'
-
+// Native
+import React, { useCallback, useState } from 'react'
 import { TextInputProps } from 'react-native'
 import { useTheme } from 'styled-components/native'
-import React, { useCallback, useState } from 'react'
+// Styles
+import { Container } from './styles'
 
 type Props = TextInputProps & {
   borderColor: string

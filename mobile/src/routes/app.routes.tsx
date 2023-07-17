@@ -3,11 +3,11 @@ import {
   createNativeStackNavigator,
   NativeStackNavigationProp,
 } from '@react-navigation/native-stack'
-import { Collection } from '@screens/Collection'
 // Screens
 import { Dashboard } from '@screens/Dashboard'
 import { EditPlant } from '@screens/EditPlant'
 import { NewPlant } from '@screens/NewPlant'
+import { Collection } from '@screens/Collection'
 
 type AppRoutes = {
   dashboard: undefined

@@ -1,16 +1,19 @@
+// Native
+import { useNavigation } from '@react-navigation/native'
+// Components
+import { Button } from '@components/Button'
+// Routes
+import { AuthNavigatorRoutesProps } from '@routes/auth.routes'
+// Styles
 import {
   BackgroundContainer,
   ButtonContainer,
   Container,
   LogoContainer,
 } from './styles'
-
+// Assets
 import LogoSvg from '@assets/logoLightTheme.svg'
 import BackgroundPng from '@assets/backgroundLightTheme.png'
-
-import { Button } from '@components/Button'
-import { useNavigation } from '@react-navigation/native'
-import { AuthNavigatorRoutesProps } from '@routes/auth.routes'
 
 export function Home() {
   const navigation = useNavigation<AuthNavigatorRoutesProps>()

@@ -1,14 +1,17 @@
+// Native
+import { useRef } from 'react'
+// Components
+import { Input } from '@components/Input'
+import { RoundButton } from '@components/RoundButton'
+// Styles
 import {
   CadastroVerdeSvgContainer,
   Container,
   Title,
   TitleContainer,
 } from './styles'
-
+// Assets
 import CadastroVerdeSvg from '@assets/cadastroVerde.svg'
-import { Input } from '@components/Input'
-import { useRef } from 'react'
-import { RoundButton } from '@components/RoundButton'
 
 export function SignUp() {
   const addressRef = useRef<any>(null)

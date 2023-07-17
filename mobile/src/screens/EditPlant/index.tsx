@@ -1,10 +1,14 @@
+// Native
+import { useTheme } from 'styled-components/native'
+import { useNavigation } from '@react-navigation/native'
+// Components
 import { Footer } from '@components/Footer'
 import { Header } from '@components/Header'
 import { Input } from '@components/Input'
 import { Slider } from '@components/Slider'
-import { useNavigation } from '@react-navigation/native'
+// Routes
 import { AppNavigatorRoutesProps } from '@routes/app.routes'
-import { useTheme } from 'styled-components/native'
+// Styles
 import {
   AddPhotoContent,
   Container,
@@ -12,6 +16,7 @@ import {
   SliderContent,
   Title,
 } from './styles'
+// Assets
 import AddPhotoSvg from '@assets/addPhoto.svg'
 
 export function EditPlant() {

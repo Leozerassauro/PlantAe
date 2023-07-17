@@ -1,4 +1,8 @@
+// Native
 import { useRef } from 'react'
+import { TouchableOpacityProps } from 'react-native'
+import { useTheme } from 'styled-components/native'
+// Styles
 import {
   Card,
   Container,
@@ -8,9 +12,8 @@ import {
   LinearBorder,
   Title,
 } from './styles'
-import { useTheme } from 'styled-components/native'
+// Assets
 import plantExample from '@assets/plantExample.png'
-import { TouchableOpacityProps } from 'react-native'
 
 type Props = TouchableOpacityProps & {}
 
